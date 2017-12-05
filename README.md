@@ -23,10 +23,26 @@ In this project I explore how we can calculate this value using the monte carlo 
 
 The Mathematica code is set up to let the user explore different betting strategies and game configurations. The user can modify variables like bankroll, minimum and maximum bet, rouletty style, etc. The default values are values that I have seen in most casino games (except for the bank roll amount, I haven't seen that). The live plot view feature works well with trials under 1000 but times out if evaluation takes too long. 
 
+An interactive web version is also avaialble here (account needed?): https://mathematica.wolframcloud.com/app/objects/bd9c0c88-9011-47c7-9dff-afd74bc8e404
+
 ----
 ## Demo
 
-*Coming soon*
+*Video coming soon*
+
+You can view results in the img directory. Here are some of them:
+
+15-bet games. Random black or red betting strategy and double down after every loss strategy
+![randomBet15Games](/img/randomBet15Games.png)
+![doubleDown15Games](/img/doubleDown15Games.png)
+
+20-bet games. Random black or red betting strategy and double down after every loss strategy
+![randomBet20Games](/img/randomBet20Games.png)
+![doubleDown20Games](/img/doubleDown20Games.png)
+
+100-bet games. Random black or red betting strategy and double down after every loss strategy
+![randomBet100Games](/img/randomBet100Games.png)
+![doubleDown100Games](/img/doubleDown100Games.png)
 
 ----
 
