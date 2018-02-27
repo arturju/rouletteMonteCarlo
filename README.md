@@ -1,20 +1,16 @@
 # Roulette Simulation Using the Monte Carlo Method
 ----
-The Monte Carlo method works by using a known probability distribution and drawing from it a specified number of times. To explore this concept, I created a simulation of a roulette game where one bets either black or red. We can calculate our expected value (for $5 bets) the following way:
-
-```
-E(X)  = ∑X * P(X)
-E_RedWin = (18/38)(5) + (20/38)(-5) = -0.263158
-```
-
-In this project I explore how we can calculate this value using the monte carlo method and how using a popular betting method affects our results.
-
+The Monte Carlo method works by using a known probability distribution and drawing from it a specified number of times. To explore this concept, I created a simulation of a roulette game in Wolfram Mathematica. In this project, I explore how to calculate expected value using the monte carlo method and how using a popular betting method affects our results.
 
 ![gif](/img/simGif.gif)
 
 
 ----
 ## Theory
+To have an analytical baseline to compare results with, I calculated the expected value of betting on red (using $5 bets):
+
+![Eq1](https://latex.codecogs.com/gif.latex?E%28X%29%3D%5Csum%20X%20%5Ccdot%20P%28X%29%3D%20P_%7Bwin%7D%20%5Ccdot%20Payout%20&plus;%20P_%7Blose%7D%20%5Ccdot%20Bet)
+![Eq1](https://latex.codecogs.com/gif.latex?E%28X%29%3D%28%5Cfrac%7B18%7D%7B38%7D%29%285%29%20&plus;%20%28%5Cfrac%7B20%7D%7B38%7D%29%28-5%29%20%3D%20-0.263158)
 
 [Link 1](https://en.wikipedia.org/wiki/Monte_Carlo_method)
 
