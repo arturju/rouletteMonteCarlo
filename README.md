@@ -6,18 +6,21 @@ The Monte Carlo method works by using a known probability distribution and drawi
 
 
 ----
-## Theory
+## Analysis
 To have an analytical baseline to compare results with, I calculated the expected value of betting on red (using $5 bets):
 
-![Eq1](https://latex.codecogs.com/gif.latex?E%28X%29%3D%5Csum%20X%20%5Ccdot%20P%28X%29%3D%20P_%7Bwin%7D%20%5Ccdot%20Payout%20&plus;%20P_%7Blose%7D%20%5Ccdot%20Bet)
-![Eq1](https://latex.codecogs.com/gif.latex?E%28X%29%3D%28%5Cfrac%7B18%7D%7B38%7D%29%285%29%20&plus;%20%28%5Cfrac%7B20%7D%7B38%7D%29%28-5%29%20%3D%20-0.263158)
+![Eq1](https://latex.codecogs.com/gif.latex?E%28X%29%3D%5Csum%20%28P%28x%29%5Ccdot%20x%29)<br>
+![Eq2](https://latex.codecogs.com/gif.latex?E%28X%29%3DP_%7Bwin%7D%20%5Ccdot%20Payout%20&plus;%20P_%7Blose%7D%20%5Ccdot%20Bet)<br>
+![Eq3](https://latex.codecogs.com/gif.latex?E%28X%29%3D%28%5Cfrac%7B18%7D%7B38%7D%29%285%29%20&plus;%20%28%5Cfrac%7B20%7D%7B38%7D%29%28-5%29%20%3D%20-0.263158)
 
 [Link 1](https://en.wikipedia.org/wiki/Monte_Carlo_method)
+
+
 
 ----
 ## Mathematica Code
 
-The Mathematica code is set up to let the user explore different betting strategies and game configurations. The user can modify variables like bankroll, minimum and maximum bet, rouletty style, etc. The default values are values that I have seen in most casino games (except for the bank roll amount, I haven't seen that). The live plot view feature works well with trials under 1000 but times out if evaluation takes too long. 
+The Mathematica code is set up to let the user explore different betting strategies and game configurations. The user can modify variables like bankroll, minimum and maximum bet, rouletty style, etc. The default values are numbers that I have seen in most casino games (except for the bank roll amount, I haven't seen much of that). The live plot view feature works well with trials under 1000 but times out if evaluation takes too long. 
 
 An interactive web version is also avaialble here (account needed?): https://mathematica.wolframcloud.com/app/objects/bd9c0c88-9011-47c7-9dff-afd74bc8e404
 
