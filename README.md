@@ -1,5 +1,5 @@
 # Roulette Simulation Using the Monte Carlo Method
-----
+
 The Monte Carlo method works by using a known probability distribution and drawing from it a specified number of times. To explore this concept, I created a simulation of a roulette game in Wolfram Mathematica. In this project, I explore how to calculate expected value using the monte carlo method and how using a popular betting method affects our results.
 
 ![gif](/img/simGif.gif)
@@ -7,7 +7,7 @@ The Monte Carlo method works by using a known probability distribution and drawi
 
 ----
 ## Analysis
-To have an analytical baseline to compare results with, I calculated the expected value of betting on red (using $5 bets):
+To have an analytical baseline to compare results with, I calculated the expected value of betting on red (using $5 bets). The simulation results should be in line with these analyticla results
 
 ![Eq1](https://latex.codecogs.com/gif.latex?E%28X%29%3D%5Csum%20%28P%28x%29%5Ccdot%20x%29)<br>
 ![Eq2](https://latex.codecogs.com/gif.latex?E%28X%29%3DP_%7Bwin%7D%20%5Ccdot%20Payout%20&plus;%20P_%7Blose%7D%20%5Ccdot%20Bet)<br>
@@ -44,6 +44,9 @@ You can view results in the img directory. Here are some of them:
 ![doubleDown100Games](/img/doubleDown100Games.png)
 
 ----
+
+Resources
+-[Explanation Video](https://youtu.be/OgO1gpXSUzU)
 
 
 To see more projects please visit [http://ajumpa.com/](http://ajumpa.com/)
