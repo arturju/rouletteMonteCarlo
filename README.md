@@ -17,15 +17,15 @@ It's always nice when the analytical and the experimental results converge. This
 
 The Mathematica code is set up to let the user explore different betting strategies and game configurations. The user can modify variables like bankroll, minimum and maximum bet, rouletty style, etc. The default values are numbers that I have seen in most casino games (except for the bank roll amount, I haven't seen much of that). The live plot view feature works well with trials under 1000 but times out if evaluation takes too long. 
 
+To model the spin of a roulette wheel I describe each spin as a binomially distributed (result is win or lose), independent event. The probability of success of depends on the type of bet and the type of roulette table- the European tables have one 0 and the American tables have two 0's!. A random rumber is generated based on the odds of the particular bet and a -1 is returned if the bet results in a loss and a *bet multiplier* is returned if the bet is succesful.
+![roulette Model](/img/rouletteModel.png)
+Once we have this model for a basic bet, we can wrap it around code simulates a spin with our betting parameters and repeat.
+
 An interactive web version is also avaialble here (account needed?): https://mathematica.wolframcloud.com/app/objects/bd9c0c88-9011-47c7-9dff-afd74bc8e404
 
 ## Results
 
 You can view results in the img directory. Here are some of them:
-
-15-bet games. Random black or red betting strategy and double down after every loss strategy
-![randomBet15Games](/img/randomBet15Games.png)
-![doubleDown15Games](/img/doubleDown15Games.png)
 
 20-bet games. Random black or red betting strategy and double down after every loss strategy
 ![randomBet20Games](/img/randomBet20Games.png)
@@ -35,12 +35,16 @@ You can view results in the img directory. Here are some of them:
 ![randomBet100Games](/img/randomBet100Games.png)
 ![doubleDown100Games](/img/doubleDown100Games.png)
 
+1000-bet games
+![randomBet1kGames](/img/randomBet1000Games.png)
+![doubleDown1kGames](/img/doubleDown1000Games.png)
 
 *Video coming soon*
 
 ----
 
-Resources
+##Resources
+
 -[Good Monte Carlo explanation video](https://youtu.be/OgO1gpXSUzU)
 -[Link 1](https://en.wikipedia.org/wiki/Monte_Carlo_method)
 
