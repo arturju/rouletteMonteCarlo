@@ -39,14 +39,11 @@ You can view results in the img directory. Here are some of them:
 ![randomBet1kGames](/img/randomBet1000Games.png)
 ![doubleDown1kGames](/img/doubleDown1000Games.png)
 
-*Video coming soon*
 
-----
+## Resources
 
-##Resources
-
--[Good Monte Carlo explanation video](https://youtu.be/OgO1gpXSUzU)
--[Link 1](https://en.wikipedia.org/wiki/Monte_Carlo_method)
+- [Good Monte Carlo explanation video](https://youtu.be/OgO1gpXSUzU)
+- [Link 1](https://en.wikipedia.org/wiki/Monte_Carlo_method)
 
 
 To see more projects please visit [http://ajumpa.com/](http://ajumpa.com/)
